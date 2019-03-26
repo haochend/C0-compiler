@@ -1,0 +1,26 @@
+//test typecheck
+
+void g(int x, int y) {
+
+  if (x > y) {
+    assert(false);
+  }
+  
+}
+
+int main(){
+
+  int x;
+  int y;
+
+  int j = 109287;
+
+  x = j >> 4;
+
+  y = j << 4;
+
+  g(x, j);
+
+  return y;
+  
+}

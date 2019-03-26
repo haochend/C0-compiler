@@ -1,0 +1,19 @@
+//test error
+
+int function_in_struct() {
+	return 0;
+}
+
+
+struct function {
+	int a;
+	int function_in_struct();
+};
+
+
+int main() {
+	struct function* s;
+	s= alloc(struct function);
+	int a = s->function_in_struct();
+	return a;
+}

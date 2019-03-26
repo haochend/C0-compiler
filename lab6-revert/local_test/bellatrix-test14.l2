@@ -1,0 +1,14 @@
+//test return 8
+// test arithmetic operations except for div and mod
+int main()
+{
+  int b;
+  int d;
+  int e;
+  
+  bool t = true;
+  
+  if (t && false) {return 2;}
+
+  return 8;
+}

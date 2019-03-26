@@ -1,0 +1,72 @@
+# Base
+*~
+*.swp
+
+# TeX
+*.pdf
+*.aux
+*.log
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+
+# Compiler
+compiler*
+log
+*.exe
+*.s
+*.nout
+bin/c0c-exe
+/test.c
+
+# OCaml
+*.a
+*.abs
+*.annot
+*.bc
+*.cma
+*.cmi
+*.cmo
+*.cmx
+*.cmxa
+*.cmxs
+*.ll
+*.o
+
+_build/
+
+*.byte
+*.native
+
+setup.data
+setup.log
+
+# Haskell
+dist
+shellbins/
+Lexer.hs
+Parser.hs
+.stack*
+
+# Java
+*.class
+*.jar
+
+# Swift
+.DS_Store
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+profile
+*.moved-aside
+DerivedData
+.idea/
+xcshareddata/
+Pods

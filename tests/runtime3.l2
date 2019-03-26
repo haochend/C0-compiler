@@ -1,0 +1,14 @@
+//test div-by-zero
+
+int main() {
+	int a;
+	for(a=0;a<50;a++) {
+		if(a==10)
+			a= 20;
+		else if(a==25)
+			a = 30;
+		else
+			a = 1/0;
+	}
+	return a;
+}

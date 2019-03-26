@@ -1,0 +1,8 @@
+//test div-by-zero
+
+int main() {
+	float a = 32412f;
+	float b = 0.0;
+	a/b;
+	return 0;
+}

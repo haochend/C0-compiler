@@ -1,0 +1,16 @@
+//test return 1
+
+
+int main() {
+	{
+		{
+			{
+				{
+					if(1==2)
+						return 0;
+				}
+			}
+		}
+	}
+	return 1;
+}

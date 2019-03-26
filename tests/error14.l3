@@ -1,0 +1,7 @@
+//test error
+
+int main() {
+	funcNotToBeFound(1);
+
+	return 0;
+}

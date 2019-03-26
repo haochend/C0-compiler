@@ -1,0 +1,33 @@
+b6 extra
+------------------------------------------------------------------------
+
+The extra work we did was floating point number handling and it is described and
+implemented in lab6_extra.
+
+We are supporting float type based on the language of l4.
+
+The test cases for floating point are in the folder compiler/float_test/.
+
+In order to run the tests, you would need to add 
+
+int fti(float n);
+void print_float(float n);
+
+in the ../runtime/15411-l4.h0 and also add
+
+int fti(float n) {
+  return (int)n;
+}
+
+int print_float(float a) {
+  fprintf(stderr, "%f\n", a);
+  return 0;
+}
+
+into ../runtime/run411.c.
+
+Moreover, you would need to change the Makefile under compiler/ to make lab6_extra, then you can run the same gradecompiler with -ellvm on the test cases.
+
+The extra part still runs correctly on most of the original test suite, except for the cases with keyword "float".
+
+There are two ways to represent float in our language, either with ".", like 1.0 or with "f", like 10f(only follows int).

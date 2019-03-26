@@ -1,0 +1,8 @@
+//test return 21
+
+int main(){
+  int a = -1;
+  int b = 0x80000000;
+  int c = b / a;
+  return 0;
+}

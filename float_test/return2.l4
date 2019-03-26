@@ -1,0 +1,10 @@
+//test return 1
+
+int main() {
+  float a = 1.0;
+  float b = 2f;
+  b = a/b;
+  if (b == 0.5) return 1;
+  else return 0;
+
+}

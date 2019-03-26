@@ -1,0 +1,7 @@
+//test div-by-zero
+
+int main() {
+	int *p = NULL;
+	*p = 1/0;
+	return 0;
+}

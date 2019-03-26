@@ -1,0 +1,12 @@
+//test error
+
+
+struct s {
+	int num;
+}
+
+int main() {
+	struct s* myS = NULL;
+
+	return myS->num;
+}

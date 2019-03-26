@@ -1,0 +1,16 @@
+
+
+int recurse(int a, int b) {
+   if (a == 0)
+     return b;
+   else if (a < 0) 
+     return recurse(a+1, b+1);
+   else
+     return recurse(a-1, b+1);
+}
+
+
+int  main()
+{
+   return recurse(10, 1);
+}

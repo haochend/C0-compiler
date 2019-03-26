@@ -1,0 +1,17 @@
+//test return 0
+
+
+int use_up_heap(int test) {
+	for(int i=0;i<test;i++) {
+		int[] use;
+		use = alloc_array(int, test);
+		if(i==test-1){
+			return use[test-1];
+		}
+	}
+	return 0;
+}
+
+int main() {
+	return use_up_heap(1000);
+}

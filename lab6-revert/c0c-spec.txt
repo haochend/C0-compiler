@@ -1,0 +1,110 @@
+NAME
+        bin/c0c - The C0 project compiler for 15-411
+
+        The grading harness always expects to run the compiler from
+        the same directory that this document lives in, bin/c0c. (The
+        grading harness also always expects that the parent directory
+        of this directory contains the standard course repository
+        materials.)
+
+SYNOPSIS
+        bin/c0c [-Olevel] [--emit=option] [-lib=headerfile.h0]
+                [--unsafe] infile.lN
+
+        The compiler can always expect that it will be called as
+        bin/c0c -- that it will be called from the parent directory of
+        a directory, named bin, which contains the compiler's code in
+        a file named c0c.
+
+        The required argument infile.lN (where N stands for a
+        nonnegative integer 0,1,2,...) should be a C0 source code
+        file. This file may be a relative path like memory.l4 or
+        ../tests/function.l3, or an absolute path like
+        /home/bovik/tests/division.l1.
+
+        The compiler should return a non-zero exit code only when
+        typechecking fails. When this occurs, no files should be
+        produced. 
+
+        If typechecking is successful, the compiler should produce the
+        output files described by the --emit option and then should
+        return with the exit status 0.
+
+OPTIONS 
+        The grading harness will ALWAYS run the c0c with the -O and
+        --emit options, but setting good defaults will help you when
+        you run the compiler by hand. -O1 and --emit=exe are probably
+        good defaults.
+
+        -eoption or --emit=option
+                This option tells the compiler which files to produce
+                after type checking is successful.
+
+                -ex86-64 (--emit=x86-64) is an option that must be
+                implemented for all assignments as the default. It
+                directs the compiler, upon successful type checking,
+                to produce the file infile.lN.s. That file contains
+                the compilation of infile.lN into x86-64 assembly.
+
+                -eabs (--emit=abs) is an option that does not need to
+                be implemented. This flag is implemented in all
+                "starter code" compilers as the default option. It
+                directs the compiler to produce the file
+                infile.lN.abs. That file contains the compilation of
+                infile.lN into abstract 3-address assembly with
+                unlimited temps.
+
+                -eexe (--emit=exe) is an option that is required for
+                some of the Lab 6 projects and that is very useful,
+                though optional, throughout the semester. It directs
+                the compiler to produce the executable file
+                infile.lN.exe (possibly by using gcc to link the
+                produced infile.lN.s file against a standard runtime).
+
+                -ellvm (--emit=llvm) is an option that is required for
+                 the LLVM Lab 6 project.
+
+        -t or --typecheck-only
+                This option must be implemented for all
+                assignments. It directs the compiler to ignore the
+                "--emit" option, and stop after type checking, and
+                produce no files.
+
+        --unsafe
+                This option must be implemented for Lab 5. It directs
+                the compiler to treat C0 arithmetic errors and memory
+                errors as undefined behavior. This may allow the
+                compiler to produce more efficient code (for instance,
+                by omitting array bounds checks).
+
+        -Olevel or --opt=level 
+                This option tells the compiler how to balance
+                efficiency of the compiler itself and efficiency of
+                the assembly that is produced.
+
+                -O0 (--opt=0) must be implemented in all labs. It
+                represents an effort to prioritize compilation
+                speed. In practice, this means that only linear or
+                log-linear algorithms should be used in compilation,
+                and that most temps should be allocated on the stack
+                instead of relying on more sophisticated register
+                allocation.
+
+                -O1 (--opt=1) must be implemented in Lab 2 (loops and
+                conditionals) and beyond. It represents a balance of
+                compiler efficiency and efficiency of the assembly
+                program that is produced. In practice, this means that
+                only register allocation, and maybe fundamental
+                optimizations like constant propagation, should be
+                done at this optimization level.
+
+                -O2 (--opt=2) must be implemented in Lab 5. This
+                optimization level directs the compiler to do
+                everything it can to produce efficient assembly code.
+
+        -lheaderfile.h0 or --lib=headerfile.h0
+                This option must be implemented in Lab 3 and
+                beyond. It provides a second file, a header file that
+                changes the typechecking and compilation of
+                infile.lN. See the project writeups for a description
+                of how header files work.

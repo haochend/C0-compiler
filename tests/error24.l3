@@ -1,0 +1,9 @@
+//test error
+
+int checkscope(int n) {
+	assert(true==3);
+}
+
+int main() {
+	return 0;
+}

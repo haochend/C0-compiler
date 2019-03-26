@@ -1,0 +1,8 @@
+//test memerror
+
+
+int main() {
+  float[] a = alloc_array(float, 10);
+  float b = a[10];
+  return 5;
+}

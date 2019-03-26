@@ -1,0 +1,10 @@
+//test infloop
+
+int main() {
+	int a = 0;
+	int cnt=0;
+	while(a<100) {
+		cnt=cnt+a;
+	}
+	return a;
+}

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Allows the first two arguments -dir filename to change the working directory
+# Mostly inteded to be used by the online grader scriptr
+if [ "$1" = "-dir" ]; then
+   cd $2
+   shift
+   shift
+fi
+
+export UNAME=`uname`
+
+echo "val () = OS.Process.exit (Grade.gradeCompiler \"$@\\n\");" | sml -Cbasic.print-warnings=false -Cprint.signatures=0 -Ccm.verbose=false -Cparser.primary-prompt='' -m $/json-lib.cm ../harness/driver.sml

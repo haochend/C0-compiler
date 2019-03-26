@@ -1,0 +1,19 @@
+//test return 0
+
+
+int recur(int* p) {
+	if((*p)==0){
+		return 0;
+	}
+	else{
+		(*p)--;
+		return recur(p);
+	}
+}
+
+
+int main() {
+	int* a = alloc(int);
+	*a = 200;
+	return recur(a);
+}

@@ -1,0 +1,18 @@
+//test return 5
+
+
+int main() {
+	int a = 4;
+	if (a==4) {
+		a--;
+		if(a==3)
+			a--;
+		if(a==2) {
+			a--;
+			if(a==1) {
+				return 5;
+			}
+		}
+	}
+	return 0;
+}

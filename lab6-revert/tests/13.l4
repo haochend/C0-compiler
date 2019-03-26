@@ -1,0 +1,11 @@
+//test return 1
+
+struct s {
+	
+};
+
+int main() {
+	struct s* myS;
+	myS = alloc(struct s);
+	return 1;
+}

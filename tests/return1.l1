@@ -1,0 +1,14 @@
+//test return 10
+
+int main ()  {
+    int x;
+    bool z = true;
+    bool z1 = true;
+    bool z2 = z==z1;
+    int y;
+    x = 0;
+    for (int a = 0; a < 5; a++) {
+        x++;
+    }
+    return 10;
+}

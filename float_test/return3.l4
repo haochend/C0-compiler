@@ -1,0 +1,8 @@
+//test return 1
+
+int main() {
+  float* x = alloc(float);
+  *x = 1.53242;
+  if (*x*2f == 3.06484) return 1;
+  return 0;
+}

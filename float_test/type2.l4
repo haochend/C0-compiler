@@ -1,0 +1,10 @@
+//test error
+
+int main() {
+  int a = 1;
+  float b = 1f;
+  if (a == b) {
+    return 0;
+  }
+  return 1;
+}

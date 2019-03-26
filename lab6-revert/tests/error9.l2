@@ -1,0 +1,12 @@
+//test infloop
+
+int main() {
+	int a;
+	int b;
+	for(a = 5; a<10;a--){
+		b = a+3;
+		while(b<9)
+			b--;
+	}
+	return 0;
+}

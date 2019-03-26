@@ -1,0 +1,19 @@
+//test return 26
+// uses functions from 15411.h0
+
+// #use <15411>
+
+int main() {
+	//integer arithmetic
+	int asInt = -1;
+	int devidedInt = asInt / 2;
+	bool answerAsInt = devidedInt < 0;
+	
+	//floating-point arithmetic
+	fpt asFloat = itof(-1);
+	fpt devidedFloat = fdiv(asFloat, itof(2));
+	bool answerAsFloat = fless(devidedFloat, 0);
+	
+	//compare the results
+	return (answerAsInt == answerAsFloat) ? 16 : 26;
+}

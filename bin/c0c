@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Get the script's path.
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+C0C="$SCRIPTPATH/c0c-exe"
+
+# Increase the stack size.
+STACK_SIZE=65536
+ulimit -s "$STACK_SIZE"
+
+exec "$C0C" $@

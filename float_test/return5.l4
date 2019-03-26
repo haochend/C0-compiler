@@ -1,0 +1,9 @@
+//test return 253213
+
+int main() {
+  float a = 0.53213;
+  float b = 2f;
+  b = b+a;
+  return fti(b*100000f);
+
+}

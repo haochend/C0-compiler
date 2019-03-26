@@ -1,0 +1,15 @@
+//test return 0
+
+struct s;
+
+struct s {
+	int num1;
+	int num2;
+};
+
+int main() {
+	struct s* newS = alloc(struct s);
+
+
+	return newS->num1;
+}

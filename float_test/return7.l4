@@ -1,0 +1,13 @@
+//test return 115
+
+struct s {
+  int x;
+  float y;
+};
+
+int main() {
+  struct s* s = alloc(struct s);
+  s->x = 5;
+  s->y = 2.4;
+  return fti((*s).y*10f)*s->x;
+}

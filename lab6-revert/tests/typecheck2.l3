@@ -1,0 +1,7 @@
+//test typecheck
+
+int main() {
+	funcIWrote(1);
+
+	return 0;
+}

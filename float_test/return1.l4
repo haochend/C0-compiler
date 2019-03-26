@@ -1,0 +1,8 @@
+//test return 0
+
+int main() {
+  float a = 1.5;
+  float b = 2f;
+  b = b*a;
+  return 0;
+}

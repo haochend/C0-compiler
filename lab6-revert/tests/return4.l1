@@ -1,0 +1,21 @@
+//test return 1
+
+int main() {
+	int a;
+	int b;
+	int c;
+	int d;
+	int e;
+	int f;
+
+	a = 2;
+	b = a + 1;
+	c = a * b;
+	d = c / a;
+	e = (d + 2) % b;
+	f = e / a;
+
+	return f;
+
+
+}

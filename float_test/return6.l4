@@ -1,0 +1,12 @@
+//test return 1347
+
+float float_func(int n, float x) {
+  if (n == 0)
+    return x;
+  else return float_func(n-1, x+x);
+}
+
+int main() {
+  float a = 0.0421;
+  return fti(float_func(5,a)*1000f);
+}

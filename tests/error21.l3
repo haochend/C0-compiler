@@ -1,0 +1,5 @@
+//test error
+
+void main() {
+	return;
+}

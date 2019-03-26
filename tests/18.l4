@@ -1,0 +1,9 @@
+//test error
+
+struct one {
+	int c = 1;
+};
+
+int main() {
+	return one.c;
+}

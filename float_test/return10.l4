@@ -1,0 +1,8 @@
+//test return 1
+
+int main() {
+  float a = 1f;
+  int b = 1;
+  if (fti(a) == b) return 1;
+  return 0;
+}

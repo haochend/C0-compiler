@@ -1,0 +1,15 @@
+//test div-by-zero
+
+int abs(int x) {
+	if (x >= 0) return x;
+	else return -x;
+}
+
+int produceZero(int x) {
+	return x-abs(x);
+}
+
+
+int main() {
+	return 42/produceZero(6);
+}

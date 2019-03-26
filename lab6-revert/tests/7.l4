@@ -1,0 +1,26 @@
+//test return 6
+
+
+struct arg {
+	int a;
+	int* b;
+};
+
+
+struct arg* return_struct(struct arg* a) {
+	struct arg* new = alloc(struct arg);
+	new->a = a->a;
+	new->b = a->b;
+	return new;
+
+}
+
+
+int main() {
+	struct arg* new = alloc(struct arg);
+	new->a = 5;
+	int* b = alloc(int);
+	*b = 6;
+	new->b = b;
+	return *(return_struct(new)->b);
+}

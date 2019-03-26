@@ -1,0 +1,13 @@
+//test error 
+
+struct repetitive {
+	
+};
+
+struct repetitive {
+	bool a;
+};
+
+int main() {
+	return 0;
+}

@@ -1,0 +1,15 @@
+//test return 8192
+
+
+int mult(int a, int b) {
+	if(b>1000)
+		return b;
+	return mult(b,a*b);
+}
+
+
+int main() {
+	int a = 1;
+	int b=2;
+	return mult(a,b);
+}

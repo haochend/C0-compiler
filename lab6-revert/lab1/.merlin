@@ -1,0 +1,11 @@
+S codegen
+S parse
+S top
+S trans
+S type
+S util
+B _build/**
+PKG core
+PKG core_kernel
+PKG getopt
+PKG ppx_jane

@@ -1,0 +1,6 @@
+//test error
+
+int main() {
+	assert(true == 1);
+	return 0;
+}

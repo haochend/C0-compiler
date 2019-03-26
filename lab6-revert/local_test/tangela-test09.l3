@@ -1,0 +1,19 @@
+//test div-by-zero
+
+int less_main();
+
+int main() {
+  int w = 0;
+  int x = 1;
+  bool main_less_than_less_main = fless(itof(w  ^ 1), less_main());
+  if (main_less_than_less_main)
+    return 1 / 0;
+  else
+    return 10 / 0;
+}
+
+fpt less_main() {
+  int w = 5;
+  int x = 5;
+  return itof(x & x & w & 1111111 ^ 0);
+}

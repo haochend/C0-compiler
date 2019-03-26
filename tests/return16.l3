@@ -1,0 +1,37 @@
+//test return 8192
+
+int mult(int a, int b) {
+	if(b>1000)
+		return b;
+	return mult(b,a*b);
+}
+int mult4(int a, int b) {
+	if(b>1000)
+		return b;
+	return mult(b,a*b);
+}
+
+int mult3(int a, int b) {
+	if(b>1000)
+		return b;
+	return mult4(b,a*b);
+}
+
+int mult2(int a, int b) {
+	if(b>1000)
+		return b;
+	return mult3(b,a*b);
+}
+
+int mult1(int a, int b) {
+	if(b>1000)
+		return b;
+	return mult2(b,a*b);
+}
+
+
+int main() {
+	int a = 1;
+	int b=2;
+	return mult1(a,b);
+}

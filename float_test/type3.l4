@@ -1,0 +1,9 @@
+//test error
+
+float donothing() {
+  return 1.0;
+}
+
+int main() {
+  return donothing();
+}

@@ -1,0 +1,7 @@
+//test return -25
+
+int main() {
+  float a = 0.25;
+  a = -a;
+  return fti(a*100f);
+}

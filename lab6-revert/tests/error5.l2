@@ -1,0 +1,9 @@
+//test infloop
+
+int main() {
+	int b;
+	while(true) {
+		b=3;
+	}
+	return 1;
+}

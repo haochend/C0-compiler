@@ -1,0 +1,9 @@
+//test memerror
+
+
+int main() {
+	int[] outbound;
+	outbound = alloc_array(int,10);
+	outbound[15] = 3;
+	return 0;
+}

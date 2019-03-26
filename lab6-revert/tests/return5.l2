@@ -1,0 +1,10 @@
+//test return 55
+
+int main() {
+	int a;
+	int cnt = 0;
+	for(a=0;a<=10;a+=1) {
+		cnt+=a;
+	}
+	return cnt;
+}

@@ -1,0 +1,4 @@
+File "lab3/_tags", line 2, characters 6-35:
+Warning: tag "package" does not expect a parameter, but is used with parameter "core,ppx_jane,getopt"
+File "lab3/_tags", line 2, characters 6-35:
+Warning: the tag "package(core,ppx_jane,getopt)" is not used in any flag or dependency declaration, so it will have no effect; it may be a typo. Otherwise you can use `mark_tag_used` in your myocamlbuild.ml to disable this warning.

@@ -1,0 +1,7 @@
+//test return 42
+
+int main() {
+	bool[] a = alloc_array(bool, 0);
+
+	return 42;
+}

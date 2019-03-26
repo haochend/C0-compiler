@@ -1,0 +1,9 @@
+//test return 1
+
+int main() {
+  float a = 1.5;
+  float b = 2f;
+  b = b*a;
+  if (b == 3f) return 1;
+  else return 0;
+}

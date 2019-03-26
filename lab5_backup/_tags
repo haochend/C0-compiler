@@ -1,0 +1,2 @@
+true: annot, bin_annot, thread
+true: package(core,ppx_jane,getopt)

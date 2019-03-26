@@ -1,0 +1,9 @@
+//test div-by-zero
+
+int main() {
+	int a;
+
+	a = -2147483648%-1;
+
+	return a;
+}

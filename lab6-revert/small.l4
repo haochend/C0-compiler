@@ -1,0 +1,11 @@
+int loop(int i, int j)
+{
+	if (i > 174500)
+		return j;
+	return loop(i + 1, j / 2);
+}
+
+int main() {
+	return loop(0, 1000);
+}
+

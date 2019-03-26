@@ -1,0 +1,28 @@
+//test div-by-zero 
+
+int main() {
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
+
+    a = 1;
+    b = 3;
+    c = b - 3 * a;
+
+    // This line will divide by zero
+    d = b / c;
+   
+    for (e = 0; e < 2; e++) {
+        e = e / 0;
+    }
+    
+    if (e == 0) {
+        int f = 4;
+    }
+    e = 4;
+    int f = 5;
+
+    return f / e;
+}

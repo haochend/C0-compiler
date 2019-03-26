@@ -1,0 +1,11 @@
+//test div-by-zero
+
+int main() {
+	int a = 0;
+
+	if(-2147483648%-1 == 0) {
+		a = 5;
+	}
+
+	return a;
+}

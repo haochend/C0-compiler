@@ -1,0 +1,14 @@
+//test error
+
+int main() {
+	int return = 0;
+	int if = 1;
+	int else = 2;
+	int main = 3;
+	int for = 4;
+	for(for=1;for<3;for++) {
+		if(if==1)
+			for++;
+	}
+	return return;
+}

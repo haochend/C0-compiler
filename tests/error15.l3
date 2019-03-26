@@ -1,0 +1,10 @@
+//test error
+
+void doNothing(int x) {
+	return;
+}
+
+int main() {
+	doNothing(int x = 1);
+	return 0;
+}

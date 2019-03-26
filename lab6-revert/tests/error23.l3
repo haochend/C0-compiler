@@ -1,0 +1,10 @@
+//test error
+
+void map(int n) {
+	return n-(n*n);
+}
+
+int main() {
+	int a = map(5);
+	return a;
+}

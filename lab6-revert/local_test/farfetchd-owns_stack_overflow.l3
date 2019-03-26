@@ -1,0 +1,132 @@
+//test return 0
+
+int stack(int i) {
+  if (i == 0)
+    return i;
+
+  int a0 = 0;
+  int a1 = 0;
+  int a2 = 0;
+  int a3 = 0;
+  int a4 = 0;
+  int a5 = 0;
+  int a6 = 0;
+  int a7 = 0;
+  int a8 = 0;
+  int a9 = 0;
+  int b0 = 0;
+  int b1 = 0;
+  int b2 = 0;
+  int b3 = 0;
+  int b4 = 0;
+  int b5 = 0;
+  int b6 = 0;
+  int b7 = 0;
+  int b8 = 0;
+  int b9 = 0;
+  int c0 = 0;
+  int c1 = 0;
+  int c2 = 0;
+  int c3 = 0;
+  int c4 = 0;
+  int c5 = 0;
+  int c6 = 0;
+  int c7 = 0;
+  int c8 = 0;
+  int c9 = 0;
+  int d0 = 0;
+  int d1 = 0;
+  int d2 = 0;
+  int d3 = 0;
+  int d4 = 0;
+  int d5 = 0;
+  int d6 = 0;
+  int d7 = 0;
+  int d8 = 0;
+  int d9 = 0;
+  int e0 = 0;
+  int e1 = 0;
+  int e2 = 0;
+  int e3 = 0;
+  int e4 = 0;
+  int e5 = 0;
+  int e6 = 0;
+  int e7 = 0;
+  int e8 = 0;
+  int e9 = 0;
+  int f0 = 0;
+  int f1 = 0;
+  int f2 = 0;
+  int f3 = 0;
+  int f4 = 0;
+  int f5 = 0;
+  int f6 = 0;
+  int f7 = 0;
+  int f8 = 0;
+  int f9 = 0;
+
+  return  a0 +
+          a1 +
+          a2 +
+          a3 +
+          a4 +
+          a5 +
+          a6 +
+          a7 +
+          a8 +
+          a9 +
+          b0 +
+          b1 +
+          b2 +
+          b3 +
+          b4 +
+          b5 +
+          b6 +
+          b7 +
+          b8 +
+          b9 +
+          c0 +
+          c1 +
+          c2 +
+          c3 +
+          c4 +
+          c5 +
+          c6 +
+          c7 +
+          c8 +
+          c9 +
+          d0 +
+          d1 +
+          d2 +
+          d3 +
+          d4 +
+          d5 +
+          d6 +
+          d7 +
+          d8 +
+          d9 +
+          e0 +
+          e1 +
+          e2 +
+          e3 +
+          e4 +
+          e5 +
+          e6 +
+          e7 +
+          e8 +
+          e9 +
+          f0 +
+          f1 +
+          f2 +
+          f3 +
+          f4 +
+          f5 +
+          f6 +
+          f7 +
+          f8 +
+          f9 + stack(i-1);
+}
+
+int main() {
+  return stack(15411);
+}

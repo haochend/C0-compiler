@@ -1,0 +1,7 @@
+//test div-by-zero
+int main()
+{
+	int x = ((-1)<<31)/(-1);
+	return 1;
+	int y = x - 1;
+}

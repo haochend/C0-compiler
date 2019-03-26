@@ -1,0 +1,11 @@
+//test return 1
+
+int main() {
+	int condition = 0;
+	int cnt=0;
+	while (condition<300) {
+		condition+=cnt;
+		cnt=cnt+5;
+	}
+	return 1;
+}
